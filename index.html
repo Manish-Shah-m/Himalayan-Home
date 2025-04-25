@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;700&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/Himalayan-home bg.png">
+                </a>
+                
+            </div>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#hero-section"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#check-in"><i class="fas fa-check"></i></a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i></a></li>
+                    <li><a href="#contact-form"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="#about-us"><i class="fas fa-info-circle"></i></a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+               
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div id="hero-image"></div>
+        <div class="hero-content">
+            <h1>Discover Nepal</h1>
+            <p>Explore the world's most breathtaking destinations</p>
+        </div>
+    </section>
+
+
+
+<!-- Second-section  -->
+
+<section id="second-section">
+        <div class="container">
+            <div id="second-section-content">
+                <h2>Where the Mountains Meet the Sky</h2>
+                <p>
+                    Nepal is a land of vibrant culture, breathtaking landscapes, and warm-hearted people. 
+                    From the towering peaks of the Himalayas to the lush valleys below, 
+                    every corner of Nepal offers an adventure waiting to be explored.
+                </p>
+    
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+<section id="check-in"class="hotel-search-section">
+    <div class="search-container">
+        <div class="search-heading">
+            <h2>Find Your Perfect Stay</h2>
+            <p>Search for the best hotels and accommodations inside & outside valley</p>
+        </div>
+        
+        <form class="search-form" id="hotel-search-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" placeholder="Where are you going?">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                
+                <div class="form-group">
+                    <label for="check-in">Check-in Date</label>
+                    <input type="date" id="check-in">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                
+                <div class="form-group">
+                    <label for="check-out">Check-out Date</label>
+                    <input type="date" id="check-out">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Adult</option>
+                        <option value="2" selected>2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="family">2 Adults, 2 Children</option>
+                    </select>
+                    <i class="fas fa-user-friends"></i>
+                </div>
+            </div>
+            
+            <div class="btn-container">
+                <button type="button" class="check-btn" id="check-availability">Check Availability</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+<!-- loading animation copided from universe library (works when check avalibility btn is pressed) -->
+<!-- Loading Overlay -->  
+<div class="loading-overlay" id="loading-overlay">
+    <div class="card">
+        <div class="loader">
+            <p>checking</p>
+            <div class="words">
+                <span class="word">availability</span>
+                <span class="word">rooms</span>
+                <span class="word">rates</span>
+                <span class="word">deals</span>
+                <span class="word">availability</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- fourth-section  -->
+<section id="fourth-section">
+    
+    <h2>Best Destinations to Experience</h2>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="images/Mustang.jpeg" alt="Destination">
+            <div class="title">Mustang</div>
+            <div class="stats"><i class="fa-solid fa-users"></i> 831</div>
+                    <span> Known for its arid landscapes, ancient monasteries, and Tibetan-influenced culture,
+                         Mustang offers a unique blend of history and adventure. 
+                    </span>
+        </div>
+        <div class="item">
+            <img src="images/annapurna.avif" alt="Destination">
+            <div class="title"> Annapurna Base Camp</div>
+            <div class="stats"><i class="fa-solid fa-users"></i> 2,231</div>
+                    <span>
+                        A dream destination for trekkers, offering stunning views of the Annapurna Massif. Situated at an altitude of 4,130 meters,
+                         the trek to ABC passes through lush forests, terraced fields, and traditional Gurung villages.
+                    </span>
+        </div>
+        <div class="item">
+            <img src="images/Chitwan National Park.avif" alt="Destination">
+            <div class="title">Chitwan National Park</div>
+            <div class="stats"><i class="fa-solid fa-users"></i> 1,224</div>
+                    <span>
+                        Chitwan National Park is Nepal’s premier wildlife reserve. Home to the endangered one-horned rhinoceros, Bengal tigers, 
+                        and various bird species, the park offers thrilling jungle safaris. 
+                    </span>
+        </div>
+        <div class="item">
+            <img src="images/limbuni.avif" alt="Destination">
+            <div class="title">Limbuni</div>
+            <div class="stats"><i class="fa-solid fa-users"></i> 784</div>
+                    <span>
+                        The birthplace of Lord Buddha, is a sacred pilgrimage site for Buddhists worldwide. Located in the Rupandehi district of Nepal,
+                         it features the Maya Devi Temple, ancient monasteries, and the Ashoka Pillar. 
+                    </span>
+        </div>
+    </div>
+</section>
+
+
+<section id="about-us">
+    <div class="container">
+        
+<div class="about-section">
+    <div class="video-container1">
+        <video autoplay loop muted playsinline>
+            <source src="images/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="content-container">
+        <h2 class="section-title">About Us</h2>
+        
+        <div class="about-text">
+            <p>Welcome to Nepal Adventures, your gateway to exploring the breathtaking beauty and rich cultural heritage of Nepal. For over 15 years, we have been guiding travelers through the majestic Himalayan landscapes, ancient temples, and vibrant villages of this enchanting country.</p>
+            
+            <p>Our team consists of experienced local guides who possess in-depth knowledge of Nepal's geography, history, and traditions. We pride ourselves on providing authentic experiences that connect travelers with the heart and soul of Nepal, while maintaining a commitment to responsible tourism that benefits local communities.</p>
+        </div>
+        
+        <h3 class="highlights-title">Why Choose Us</h3>
+        
+        <div class="highlights">
+            <div class="highlight-item">
+                <div class="highlight-icon">1</div>
+                <div class="highlight-text">
+                    <h3>Local Expertise</h3>
+                    <p>Our guides are born and raised in Nepal with extensive knowledge of the terrain, culture, and hidden gems that most tourists never discover.</p>
+                </div>
+            </div>
+            
+            <div class="highlight-item">
+                <div class="highlight-icon">2</div>
+                <div class="highlight-text">
+                    <h3>Personalized Experience</h3>
+                    <p>We customize each itinerary based on your interests, fitness level, and time constraints to ensure you get the most meaningful experience possible.</p>
+                </div>
+            </div>
+            
+            <div class="highlight-item">
+                <div class="highlight-icon">3</div>
+                <div class="highlight-text">
+                    <h3>Safety First</h3>
+                    <p>With comprehensive safety protocols, emergency evacuation plans, and first-aid trained guides, your wellbeing is our top priority in Nepal's varied terrains.</p>
+                </div>
+            </div>
+            
+            <div class="highlight-item">
+                <div class="highlight-icon">4</div>
+                <div class="highlight-text">
+                    <h3>Sustainable Tourism</h3>
+                    <p>We're committed to environmental conservation and supporting local communities, ensuring your tourism dollars benefit the people and places you visit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+
+
+
+<!-- fifth-section -->
+<!-- <section id ="fifth-section" >
+    <div class="container">
+            <h2>A Journey Beyond the Himalayas</h2>
+            <div id="fifth-section-video">
+                <div class="container">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                          <source src="images/video !.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                        <div class="overlay-text">
+                          <h1>पहाडहरूको आत्मा तिम्रो हृदयमा बोल्छ।</h1>
+                          <a href="gallery.html">
+                            <button>Check Gallery</button>
+                          </a>
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+
+    
+         <h3 style="padding-bottom: 40px;padding-top: 20px;">Nestled between the towering peaks of the Himalayas, Nepal is a land where adventure meets serenity,
+             and culture thrives at every corner. From the majestic snow-capped mountains to the lush jungles 
+            of the Terai, Nepal offers an experience unlike any other.<br><br>
+            But beyond the physical beauty, it’s the warmth of the people that makes Nepal truly special.<br><br>
+            The Nepali way of life—simple, spiritual, and connected to nature—makes visitors feel more like family than tourists. 
+            So, whether you're trekking through ancient villages, meditating at a Buddhist monastery, or exploring the streets of Kathmandu, 
+            you'll find that Nepal’s magic is not just in its landscapes, but in its heart.<br><br>
+
+            So, pack your bags and come experience Nepal—a land where the mountains touch the sky, and the spirit touches your soul.
+        </h3>
+    </div>
+</section>
+ -->
+
+
+
+
+
+ <!-- fifth-section  -->
+ 
+   <section id="fifth-section">
+    <div class="nepal-container">
+        <div id="nepal-travel-showcase" class="nepal-showcase">
+          <!-- Left side - Bento Grid -->
+          <div class="nepal-image-grid">
+            <div class="nepal-photo nepal-photo-large">
+              <div class="nepal-video-container">
+                <video class="nepal-video" autoplay muted loop playsinline>
+                  <source src="images/video !.mp4" type="video/mp4">
+                  <!-- Fallback for browsers that don't support video -->
+                  <div class="nepal-photo-bg" style="background-image: url('/api/placeholder/800/800');"></div>
+                </video>
+              </div>
+            </div>
+            <div class="nepal-photo nepal-photo-medium">
+              <div class="nepal-photo-bg"></div>
+            </div>
+            <div class="nepal-photo nepal-photo-small">
+              <div class="nepal-photo-bg"></div>
+            </div>
+          </div>
+          
+          <!-- Right side - Content -->
+          <div class="nepal-description">
+            <h1 class="nepal-heading">Discover Nepal</h1>
+            <p class="nepal-text">Experience the breathtaking Himalayas, ancient temples, and vibrant culture of Nepal. From Everest treks to Buddhist monasteries, adventure awaits in this mountain paradise.</p>
+            <a href="gallery.html">
+                <button class="nepal-cta-button">Explore Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+   </section>
+ 
+
+
+
+
+
+<!-- contact-form   /    sixth-section  -->
+<section id="contact-form">
+    <div class="contact-container">
+        <div class="container">
+            <div class="heading">
+                <h1>Ready to <span class="curve">embark</span><br>on a <span class="curve">new</span> journey?</h1>
+            </div>
+            
+            <p class="subheading">
+                Don't let your dream getaway remain a dream any longer. Take action now and
+                let us craft your next unforgettable adventure. Join us in turning your travel
+                fantasies into unforgettable realities.
+            </p>
+            
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <button type="submit" class="btn">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+            
+          <h3>Himalayan-Home</h3>
+          <p>Discover the world, one adventure at a time.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Destinations</h4>
+            <ul>
+              <li><a href="#">Mountain Treks</a></li>
+              <li><a href="#">Beach Getaways</a></li>
+              <li><a href="#">Cultural Immersions</a></li>
+              <li><a href="#">Wildlife Safaris</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Booking Info</a></li>
+              <li><a href="#">Travel Insurance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Himalayan-Home. All rights reserved.</p>
+        <p style="padding-left: 20px; font-weight: 600; font-size:14px; color:#1661b8;">Designed by Manish Shah</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+<!-- jQuery (Required for Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="java.js"></script>
+</body>
+</html>
