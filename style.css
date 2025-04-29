@@ -133,6 +133,7 @@ header.scrolled .logo-text {
   align-items: center;
   justify-content: center;
   /* margin-left: -80px; */
+  margin-right: 220px;
 }
 
 .nav-links li {
@@ -146,6 +147,7 @@ header.scrolled .logo-text {
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
+  
 }
 
 header.scrolled .nav-links a {
