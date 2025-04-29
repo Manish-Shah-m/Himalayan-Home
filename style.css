@@ -132,7 +132,7 @@ header.scrolled .logo-text {
   padding: 0;
   align-items: center;
   justify-content: center;
-  margin-left: -80px;
+  /* margin-left: -80px; */
 }
 
 .nav-links li {
